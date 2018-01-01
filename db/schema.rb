@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180101180228) do
+ActiveRecord::Schema.define(version: 20180101182940) do
+
+  create_table "cards", force: :cascade do |t|
+    t.integer  "hp"
+    t.integer  "number"
+    t.integer  "pokemon_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "pokemons", force: :cascade do |t|
     t.string   "name"

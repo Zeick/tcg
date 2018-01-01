@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hp: 1
+  number: 1
+  pokemon_id: 1
+
+two:
+  hp: 1
+  number: 1
+  pokemon_id: 1
