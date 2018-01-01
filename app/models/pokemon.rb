@@ -1,2 +1,3 @@
-class Pokemon < ApplicationRecord
+class Pokemon < ActiveRecord::Base
+has_many :cards
 end
