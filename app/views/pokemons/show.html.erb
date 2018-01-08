@@ -9,6 +9,10 @@
   <strong>Number:</strong>
   <%= @pokemon.number %>
 </p>
-
+<h2> cards </h2>
+<% @pokemon.cards.each do |c| %>
+  <%= c.hp %> HP, <%= link_to "card number: #{c.number}" , c %>
+  <br>
+<% end %>
 <%= link_to 'Edit', edit_pokemon_path(@pokemon) %> |
 <%= link_to 'Back', pokemons_path %>

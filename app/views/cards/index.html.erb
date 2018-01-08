@@ -17,7 +17,7 @@
       <tr>
         <td><%= card.hp %></td>
         <td><%= card.number %></td>
-        <td><%= card.pokemon_id %></td>
+        <td><%= card.pokemon.name %></td>
         <td><%= link_to 'Show', card %></td>
         <td><%= link_to 'Edit', edit_card_path(card) %></td>
         <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -29,3 +29,4 @@
 <br>
 
 <%= link_to 'New Card', new_card_path %>
+<%= link_to 'All Pokémon', pokemons_path %>
