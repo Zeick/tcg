@@ -1,0 +1,11 @@
+<p id='notice'><%= notice %> </p>
+
+<h1>Card ratings</h1>
+
+<p>Total number of ratings -- <%= @ratings.count %></p>
+
+<ul>
+<% @ratings.each do |r| %>
+<li><%= r %> </li>
+<% end %>
+</ul>
